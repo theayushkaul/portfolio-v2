@@ -8,7 +8,8 @@ export type Project = {
   meta: string; // the secondary line under the snippet
   description: string;
   tags: string[];
-  href: string;
+  href?: string;
+  visibility: "public" | "private";
 };
 
 export const projects: Project[] = [
@@ -19,7 +20,8 @@ export const projects: Project[] = [
     description:
       "A LangGraph-powered code-review agent with diff parsing, RAG retrieval, and independently testable checker nodes for security, logic, and style findings.",
     tags: ["LangGraph", "Python", "RAG"],
-    href: "https://github.com/theayushkaul",
+    href: "https://github.com/theayushkaul/DevMind",
+    visibility : "public"
   },
   {
     title: "Tendr — Modular Backend Architecture",
@@ -28,16 +30,17 @@ export const projects: Project[] = [
     description:
       "Node.js and Express backend with MongoDB, Redis, role-based access control, OTP verification, and real-time messaging across three user roles.",
     tags: ["Node.js", "MongoDB", "Redis"],
-    href: "https://github.com/theayushkaul",
+    visibility : "private"
   },
   {
-    title: "Real-Time Chat Application",
-    snippet: 'socket.emit("message:new")',
-    meta: "typing indicators · read receipts · groups",
+    title: "Instaframe — QR Photobooth",
+    snippet: "scan(qr) → capture → overlay",
+    meta: "sharp · opentype.js · qr generation",
     description:
-      "MERN and Socket.IO app supporting individual and group channels, typing indicators, read receipts, and low-latency messaging interactions.",
-    tags: ["React", "Socket.IO", "Chakra UI"],
-    href: "https://github.com/theayushkaul",
+      "QR-triggered photobooth app with real-time image capture and custom overlays, designed for processing and typography.",
+    tags: ["sharp", "opentype.js", "QR Code"],
+    href: "https://github.com/theayushkaul/instaframe",
+    visibility : "public"
   },
   {
     title: "Tax Automation & PDF Intelligence",
@@ -46,7 +49,7 @@ export const projects: Project[] = [
     description:
       "Automation and extraction pipelines for log reconciliation, XML validation, and tax PDF classification across structured enterprise workflows.",
     tags: ["Python", "pandas", "Claude API"],
-    href: "https://github.com/theayushkaul",
+    visibility : "private"
   },
 ];
 
@@ -117,7 +120,7 @@ export type SocialLink = {
 
 export const stats = [
   { value: "380+", label: "DSA solved" },
-  { value: "50", label: "state formats" },
+  { value: "100+", label: "files automated" },
   { value: "5", label: "agent nodes" },
 ];
 

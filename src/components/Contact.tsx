@@ -2,12 +2,12 @@ import { profile } from "@/data/content";
 
 export default function Contact() {
   return (
-    <section className="mx-auto max-w-6xl px-6 pb-16 sm:pb-20">
-      <div className="rounded-2xl border border-card-border bg-card px-6 py-14 text-center sm:px-12 sm:py-20">
-        <p className="font-mono text-xs text-accent">
+    <section className="mx-auto max-w-6xl px-5 pb-6 pt-[4.5rem] sm:px-6 sm:pb-10 sm:pt-28">
+      <div className="contact-panel rounded-xl border border-[#164360] px-5 py-12 text-center shadow-[0_24px_80px_rgba(0,0,0,0.25)] sm:rounded-2xl sm:px-12 sm:py-20">
+        <p className="font-mono text-xs font-semibold tracking-wide text-accent sm:text-sm">
           {profile.sections.contact.eyebrow}
         </p>
-        <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
+        <h2 className="mx-auto mt-4 max-w-3xl text-3xl font-semibold leading-[1.08] tracking-tight sm:text-4xl md:text-5xl">
           {profile.sections.contact.heading}
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted sm:text-base">
