@@ -5,10 +5,10 @@ const roleDotColors = ["bg-accent", "bg-[#347eae]", "bg-[#275d80]", "bg-[#1c435c
 export default function Experience() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-14 sm:px-6 sm:py-20">
-      <p className="font-mono text-xs text-accent">
+      <p className="font-mono text-xs font-semibold tracking-wide text-accent sm:text-sm">
         {profile.sections.experience.eyebrow}
       </p>
-      <h2 className="mt-3 max-w-2xl text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
+      <h2 className="mt-3 max-w-3xl text-3xl font-semibold leading-[1.08] tracking-tight sm:text-4xl md:text-5xl">
         {profile.sections.experience.heading}
       </h2>
 

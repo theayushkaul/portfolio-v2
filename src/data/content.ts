@@ -139,8 +139,9 @@ export const profile = {
     signalLabel: "current_signal",
     signal: [
       "Python automation reduced manual reconciliation time by ~80%",
-      "LangGraph code-review agent with security, logic, and style nodes",
-      "Node.js, MongoDB, Redis, Socket.IO backend architecture",
+      "LangGraph code-review agent catching security, logic, and style issues across diffs",
+      "Modular Node.js backend serving 3 user roles with RBAC and real-time messaging",
+      "Multi-database Flask API validated across 6 engines, cutting QA effort by 70%"
     ],
   },
   socials: [
